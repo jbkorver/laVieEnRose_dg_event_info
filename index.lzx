@@ -1,0 +1,40 @@
+<!-- * COPYRIGHT_BEGIN ***************************************************
+* Copyright 2008 Peyton Designs.  All Rights Reserved.                   *
+* Author: Juliana Korver                                                 *
+* Version 1.0                                                            *
+* COPYRIGHT_END ****************************************************** -->
+<!DOCTYPE canvas SYSTEM "http://laszlosystems.com/lps/tools/lzx.dtd">
+<canvas width="822" height="710" proxied="false" title="La Vie en Rose" bgcolor="0xa6b57c">
+
+<include href="resources.lzx" />
+<include href="lib/classes.lzx" />
+<include href="lib/schedule.lzx" />
+<include href="lib/location.lzx" />
+<include href="lib/lodging.lzx" />
+<include href="lib/sponsors.lzx" />
+<include href="lib/register.lzx" />
+<include href="lib/players.lzx" />
+<include href="lib/extras.lzx" />
+
+
+<view name="body" width="822" height="${parent.height}" bgcolor="0xa6b57c">
+   <include href="lib/header.lzx"/>
+   
+   <view name="main" width="${parent.width}" y="${parent.header.height+10}">
+      <view name="smallBorder" bgcolor="0x596237" width="822" height="622">
+         <view name="bigBorder" bgcolor="0x999999" width="820" height="620" x="1" y="1">
+            <view name="image" resource="background_rsc" x="10" y="10" clip="true" width="800">
+               <include href="lib/welcome.lzx"/>
+               <include href="lib/rose.lzx"/>
+               <include href="lib/content.lzx"/>
+            </view> <!-- image -->
+         </view> <!-- end bigBorder -->
+     
+      </view> <!-- end smallBorder -->
+   </view> <!-- end main -->
+   
+   <include href="lib/footer.lzx"/>
+
+</view> <!-- end body -->
+  
+</canvas>
